@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/tailwind.min.css">
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <script src="js/i18n.js"></script>
 
 </head><body class="font-sans"><div id="content">
 <div>
@@ -47,9 +48,9 @@
         </a>
         <a href="https://t.me/HashPanda" class="flex space-x-1 items-center hover:text-white"> 
           <!-- <svg class="hidden sm:inline w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg> -->
-          <span>Join on Telegram</span>
+          <span data-i18n="join-telegram">Join on Telegram</span>
         </a>
-        <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x8578Eb576e126f67913a8bC0622e0A22EBa0989A" class="inline-block bg-gradient-to-br from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-700 font-semibold rounded-lg py-2 px-5 text-white "><img class="w-4 h-4 inline mr-2 -mt-1" src="images/cake.svg" />Buy on PancakeSwapV2</a>
+        <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x8578Eb576e126f67913a8bC0622e0A22EBa0989A" class="inline-block bg-gradient-to-br from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-700 font-semibold rounded-lg py-2 px-5 text-white "><img class="w-4 h-4 inline mr-2 -mt-1" src="images/cake.svg" /><span data-i18n="buy-pancakeswap">Buy on PancakeSwapV2</span></a>
       </nav>
     </header>
   </div>
@@ -59,14 +60,14 @@
     <div class="max-w-screen-xl mx-auto px-6 lg:px-8 xl:px-4 grid md:grid-cols-4 xl:grid-cols-5 gap-x-12 lg:gap-x-20">
       <div class="order-2 md:order-1 col-span-2 self-center mt-12 md:mt-0">
         <h1 class="text-lg text-gray-400">#HashPanda</h1>
-        <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4 lg:mb-8 leading-tight">A Decentralized Meme Token</h2>
+        <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4 lg:mb-8 leading-tight" data-i18n="title">A Decentralized Meme Token</h2>
         
-        <p class="text-lg xl:text-xl text-gray-200 mb-6 lg:mb-8 xl:mb-10">HashPanda aims to become the most decentralized meme-token in existence, distributing its token to over 1 million users and surpassing DogeCoin in the number of holders</p>
+        <p class="text-lg xl:text-xl text-gray-200 mb-6 lg:mb-8 xl:mb-10" data-i18n="subtitle">HashPanda aims to become the most decentralized meme-token in existence, distributing its token to over 1 million users and surpassing DogeCoin in the number of holders</p>
         <div class="flex space-x-4 mb-6">
-            <a href="https://t.me/HashPanda" class="focus:outline-none inline-block bg-transparent border-2 border-white hover:bg-gray-700 font-semibold rounded-lg py-4 px-6 text-white">Join Telegram</a>
-            <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x8578Eb576e126f67913a8bC0622e0A22EBa0989A" class="focus:outline-none inline-block bg-gradient-to-br from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-700 font-semibold rounded-lg py-4 px-6 text-white"><img class="w-4 h-4 inline mr-2 -mt-1" src="images/cake.svg" />Buy on PancakeSwapV2</a>
+            <a href="https://t.me/HashPanda" class="focus:outline-none inline-block bg-transparent border-2 border-white hover:bg-gray-700 font-semibold rounded-lg py-4 px-6 text-white" data-i18n="join-telegram">Join Telegram</a>
+            <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x8578Eb576e126f67913a8bC0622e0A22EBa0989A" class="focus:outline-none inline-block bg-gradient-to-br from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-700 font-semibold rounded-lg py-4 px-6 text-white"><img class="w-4 h-4 inline mr-2 -mt-1" src="images/cake.svg" /><span data-i18n="buy-pancakeswap">Buy on PancakeSwapV2</span></a>
         </div>
-        <p class="text-gray-400 text-sm">Over 256,527 token holders on Binance Smart Chain</p>
+        <p class="text-gray-400 text-sm" data-i18n="num-holders">Over 256,527 token holders on Binance Smart Chain</p>
       </div>
       <div class="order-1 md:order-2 col-span-2 xl:col-span-3">
         <img src="images/panda.jpg" class="rounded-lg shadow-2xl" alt="">
@@ -91,87 +92,87 @@
   <div class="bg-gradient-to-b from-black to-gray-900" id="features">
     <div class="max-w-screen-xl mx-auto px-6">
       <div class="text-center mb-12">
-        <h3 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4">#PANDA Features</h3>
-        <p class="text-lg xl:text-xl text-gray-200">Auto liquidity locking, yield-farming and dApp utility</p>
+        <h3 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4" data-i18n="features-title">#PANDA Features</h3>
+        <p class="text-lg xl:text-xl text-gray-200" data-i18n="features-list">Auto liquidity locking, yield-farming and dApp utility</p>
       </div>
 
 
       <div class="grid md:grid-cols-3 gap-x-8 gap-y-8 items-start">
         <div class="p-4 md:p-8  rounded-lg bg-gray-900">
           <div class="flex justify-between items-baseline mb-4">
-            <h4 class="text-xl lg:text-2xl font-bold">Token</h4>
+            <h4 class="text-xl lg:text-2xl font-bold" data-i18n="token-title">Token</h4>
           </div>
-          <p class="text-gray-200 mb-6 text-lg">Token features that benefit users and token holders.</p>
+          <p class="text-gray-200 mb-6 text-lg" data-i18n="token-description">Token features that benefit users and token holders.</p>
           <ul class="text-gray-200 space-y-4 text-lg">
             <li class="flex space-x-2 items-center">
               <div class="w-6 h-6">
                 <svg class="text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               </div>
-              <span>Features a Panda</span>
+              <span data-i18n="token-b1">Features a Panda</span>
             </li>
             <li class="flex space-x-2 items-center">
               <div class="w-6 h-6">
                 <svg class="text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               </div>
-              <span>Utility for dApps</span>
+              <span data-i18n="token-b2">Utility for dApps</span>
             </li>
             <li class="flex space-x-2 items-center">
                 <div class="w-6 h-6">
                     <svg class="text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                 </div>
-                <span>Auto-yield farming</span>
+                <span data-i18n="token-b3">Auto-yield farming</span>
             </li>
           </ul>
         </div>
         <div class="p-4 md:p-8  rounded-lg bg-gray-900">
           <div class="flex justify-between items-baseline mb-4">
-            <h4 class="text-xl lg:text-2xl font-bold">Distribution</h4>
+            <h4 class="text-xl lg:text-2xl font-bold" data-i18n="distribution-title">Distribution</h4>
           </div>
-          <p class="text-gray-200 mb-6 text-lg">Decentralized distribution using community mechanisms.</p>
+          <p class="text-gray-200 mb-6 text-lg" data-i18n="distribution-description">Decentralized distribution using community mechanisms.</p>
           <ul class="text-gray-200 space-y-4 text-lg">
             <li class="flex space-x-2 items-center">
               <div class="w-6 h-6">
                 <svg class="text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               </div>
-              <span>Programmatic distribution</span>
+              <span data-i18n="distribution-b1">Programmatic distribution</span>
             </li>
             <li class="flex space-x-2 items-center">
               <div class="w-6 h-6">
                 <svg class="text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               </div>
-              <span>Community rewards</span>
+              <span data-i18n="distribution-b2">Community rewards</span>
             </li>
             <li class="flex space-x-2 items-center">
               <div class="w-6 h-6">
                 <svg class="text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               </div>
-              <span>Tipping users/creators</span>
+              <span data-i18n="distribution-b3">Tipping users/creators</span>
             </li>
           </ul>
         </div>
         <div class="p-4 md:p-8  rounded-lg bg-gray-900">
             <div class="flex justify-between items-baseline mb-4">
-              <h4 class="text-xl lg:text-2xl font-bold">Benefits</h4>
+              <h4 class="text-xl lg:text-2xl font-bold" data-i18n="benefits-title">Benefits</h4>
             </div>
-            <p class="text-gray-200 mb-6 text-lg">Countless benefits for HashPanda token holders.</p>
+            <p class="text-gray-200 mb-6 text-lg" data-i18n="benefits-description">Countless benefits for HashPanda token holders.</p>
             <ul class="text-gray-200 space-y-4 text-lg">
               <li class="flex space-x-2 items-center">
                 <div class="w-6 h-6">
                   <svg class="text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                 </div>
-                <span>Fairly distributed</span>
+                <span data-i18n="benefits-b1">Fairly distributed</span>
               </li>
               <li class="flex space-x-2 items-center">
                 <div class="w-6 h-6">
                   <svg class="text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                 </div>
-                <span>Rising price floor</span>
+                <span data-i18n="benefits-b2">Rising price floor</span>
               </li>
               <li class="flex space-x-2 items-center">
                 <div class="w-6 h-6">
                   <svg class="text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                 </div>
-                <span>Anti-whale safety</span>
+                <span data-i18n="benefits-b3">Anti-whale safety</span>
               </li>
             </ul>
           </div>
@@ -183,9 +184,9 @@
 
   <div class="bg-gray-900" id="project">
     <div class="max-w-4xl mx-auto px-6 lg:px-8 xl:px-4 py-8">
-        <h3 class="text-white text-center text-3xl md:text-4xl lg:text-5xl font-bold mt-12">The #HashPanda Project</h3>
+        <h3 class="text-white text-center text-3xl md:text-4xl lg:text-5xl font-bold mt-12" data-i18n="project-title">The #HashPanda Project</h3>
       <div class="text-left pt-12">
-        <p class="text-lg xl:text-xl text-gray-200 mb-4">HashPanda’s mission is to become the most decentralized and most fairly distributed meme-token in the world. We’ve pioneered a distribution mechanism that allows us to distribute tokens in a social way, preventing whale-dumps and thus creating a safe-haven asset that can serve as a piggy bank for years to come. Additionally, our token holders receive 3% of all transactions, providing the benefit of automatic yield farming.</p>
+        <p class="text-lg xl:text-xl text-gray-200 mb-4" data-i18n="project-text">HashPanda’s mission is to become the most decentralized and most fairly distributed meme-token in the world. We’ve pioneered a distribution mechanism that allows us to distribute tokens in a social way, preventing whale-dumps and thus creating a safe-haven asset that can serve as a piggy bank for years to come. Additionally, our token holders receive 3% of all transactions, providing the benefit of automatic yield farming.</p>
         <!-- <p class="text-lg xl:text-xl text-gray-200 mb-4">The HashPanda token features impressive liquidity-locking and enables auto-yield farming for loyal PANDA token holders. We believe however, simply being a meme token and offering these benefits is not enough. The real problem that we want to focus on is fair accessibility to cryptocurrencies and mainstream adoption.</p>
         <p class="text-lg xl:text-xl text-gray-200 mb-4">HashPanda is socially distributed through community rewards, airdrops, and content/creator tipping on our dApps. It is a community-owned project and has a dedicated token pool for such rewards and airdrops. The supply pool is expected to be fully distributed within the first couple weeks of project launch.</p>
         <p class="text-lg xl:text-xl text-gray-200 mb-4">Additionally, our aim is to establish and grow utility for the PANDA token: dApps targeting mainstream users that are not familiar with cryptocurrencies. This means focusing on dApp user experience, educational efforts and targeted guerilla marketing tactics. The dApps which are currently in development are: a meme-based content platform, a NFT launch-pad with virality mechanism and a social giveaway application.</p> -->
@@ -195,34 +196,34 @@
 
   <div class="bg-gray-900" id="problem">
     <div class="max-w-4xl mx-auto px-6 lg:px-8 xl:px-4 py-8">
-        <h3 class="text-white text-center text-3xl md:text-4xl lg:text-5xl font-bold mt-12">The Problem</h3>
+        <h3 class="text-white text-center text-3xl md:text-4xl lg:text-5xl font-bold mt-12" data-i18n="problem-title">The Problem</h3>
       <div class="text-left pt-12">
-        <p class="text-lg xl:text-xl text-gray-200 mb-4">HashPanda solves the problem of unfair token distribution and frequent whale dumps. Take Dogecoin, for example: the largest holder owns 28% of all tokens. This holder could single-handedly crash the price by an estimated 96%.</p>
-        <p class="text-lg xl:text-xl text-gray-200 mb-4">Most other tokens have a similarly uneven supply distribution. For these tokens, a handful of individuals own major portions of the supply, resulting in continuous dumps and unsustainable price pressure in the long term.</p>
+        <p class="text-lg xl:text-xl text-gray-200 mb-4" data-i18n="problem-text1">HashPanda solves the problem of unfair token distribution and frequent whale dumps. Take Dogecoin, for example: the largest holder owns 28% of all tokens. This holder could single-handedly crash the price by an estimated 96%.</p>
+        <p class="text-lg xl:text-xl text-gray-200 mb-4" data-i18n="problem-text2">Most other tokens have a similarly uneven supply distribution. For these tokens, a handful of individuals own major portions of the supply, resulting in continuous dumps and unsustainable price pressure in the long term.</p>
       </div>
     </div>
   </div>
 
   <div class="bg-gray-900" id="solution">
     <div class="max-w-4xl mx-auto px-6 lg:px-8 xl:px-4 py-8">
-        <h3 class="text-white text-center text-3xl md:text-4xl lg:text-5xl font-bold mt-12">The Solution</h3>
+        <h3 class="text-white text-center text-3xl md:text-4xl lg:text-5xl font-bold mt-12" data-i18n="solution-title">The Solution</h3>
       <div class="text-left pt-12">
-        <p class="text-lg xl:text-xl text-gray-200 mb-4">HashPanda solves this problem through an innovative social distribution mechanism. This mechanism is responsible for distributing 80% of all eventually circulating PANDA tokens to a wide range of holders (500,000 to 1 million token holders, to be precise), making HashPanda the most decentralized meme-token in existence.</p>
-        <p class="text-lg xl:text-xl text-gray-200 mb-4">This is done by programmatically subscribing to all transactions on Binance Smart Chain (which are public by nature) and randomly picking a couple thousand winners each day, who are gifted with a set number of PANDA tokens. The receivers of PANDA tokens usually become long-term holders and loyal project supporters.</p>
+        <p class="text-lg xl:text-xl text-gray-200 mb-4" data-i18n="solution-text1">HashPanda solves this problem through an innovative social distribution mechanism. This mechanism is responsible for distributing 80% of all eventually circulating PANDA tokens to a wide range of holders (500,000 to 1 million token holders, to be precise), making HashPanda the most decentralized meme-token in existence.</p>
+        <p class="text-lg xl:text-xl text-gray-200 mb-4" data-i18n="solution-text2">This is done by programmatically subscribing to all transactions on Binance Smart Chain (which are public by nature) and randomly picking a couple thousand winners each day, who are gifted with a set number of PANDA tokens. The receivers of PANDA tokens usually become long-term holders and loyal project supporters.</p>
       </div>
     </div>
   </div>
 
   <div class="bg-gray-900" id="distribution">
     <div class="max-w-4xl mx-auto px-6 lg:px-8 xl:px-4 py-8">
-        <h3 class="text-white text-center text-3xl md:text-4xl lg:text-5xl font-bold mt-12">Decentralized Distribution</h3>
+        <h3 class="text-white text-center text-3xl md:text-4xl lg:text-5xl font-bold mt-12" data-i18n="method-title">Decentralized Distribution</h3>
       <div class="text-left pt-12">
-        <p class="text-lg xl:text-xl text-gray-200 mb-4">We believe our approach is the fairest and most sustainable way to create a decentralized token. It helps to ensure the stability of the future token value and serves as an effective anti-whale measure. You can track the distribution progress below. The process is estimated to take between 4 and 8 weeks, until the allocated supply of 400 trillion PANDA tokens has been fully distributed. The progress bar is updated every 48 hours.</p>
+        <p class="text-lg xl:text-xl text-gray-200 mb-4" data-i18n="method-text">We believe our approach is the fairest and most sustainable way to create a decentralized token. It helps to ensure the stability of the future token value and serves as an effective anti-whale measure. You can track the distribution progress below. The process is estimated to take between 4 and 8 weeks, until the allocated supply of 400 trillion PANDA tokens has been fully distributed. The progress bar is updated every 48 hours.</p>
 
         <div class="relative pt-4">
             <div class="flex mb-2 items-center justify-between">
               <div>
-                <span class="text-xs font-semibold inline-block uppercase rounded-full text-white">
+                <span class="text-xs font-semibold inline-block uppercase rounded-full text-white" data-i18n="bar-text">
                   Distributing PANDA to 1 million holders
                 </span>
               </div>
@@ -323,98 +324,98 @@
         <div class="grid md:grid-cols-4 gap-8 lg:gap-12 py-16 mb-12">
             <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg shadow hover:shadow-xl transition-all duration-500 p-6 flex">
                 <div class="flex-1">
-                    <h5 class="font-bold text-xl lg:text-2xl mb-3">Token Holders</h5>
-                    <p class="text-lg text-gray-200 mb-6">Over 256,527</p>
+                    <h5 class="font-bold text-xl lg:text-2xl mb-3" data-i18n="token-holders">Token Holders</h5>
+                    <p class="text-lg text-gray-200 mb-6">256,527</p>
                   </div>
             </div>
             <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg shadow hover:shadow-xl transition-all duration-500 p-6 flex">
                 <div class="flex-1">
-                    <h5 class="font-bold text-xl lg:text-2xl mb-3">Circulating Supply</h5>
+                    <h5 class="font-bold text-xl lg:text-2xl mb-3" data-i18n="circulating-supply">Circulating Supply</h5>
                     <p class="text-lg text-gray-200 mb-6">113,559,500,000,000</p>
                   </div>
             </div>
             <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg shadow hover:shadow-xl transition-all duration-500 p-6 flex">
                 <div class="flex-1">
-                    <h5 class="font-bold text-xl lg:text-2xl mb-3">Market Cap</h5>
+                    <h5 class="font-bold text-xl lg:text-2xl mb-3" data-i18n="market-cap">Market Cap</h5>
                     <p class="text-lg text-gray-200 mb-6">$17,988,594</p>
                   </div>
             </div>
             <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg shadow hover:shadow-xl transition-all duration-500 p-6 flex">
                 <div class="flex-1">
-                    <h5 class="font-bold text-xl lg:text-2xl mb-3">Community Size</h5>
+                    <h5 class="font-bold text-xl lg:text-2xl mb-3" data-i18n="community-size">Community Size</h5>
                     <p class="text-lg text-gray-200 mb-6">32,969+ Members</p>
                   </div>
             </div>
           </div>
 
       <div class="text-center mb-12" id="questions">
-        <h3 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4">Common Questions</h3>
+        <h3 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4" data-i18n="questions-title">Common Questions</h3>
         <!-- <p class="text-lg xl:text-xl text-gray-200">Ask us anything about our product.</p> -->
       </div>
       <div class="mb-6">
         <ul class="divide-y divide-gray-600 text-base md:text-lg">
           <li x-data="{'active': false}">
             <button @click="active = !active" class="py-3 lg:py-4 font-bold focus:outline-none hover:text-indigo-700 w-full flex items-center justify-between">
-              <span class="flex-1 text-left pr-6">
+              <span class="flex-1 text-left pr-6" data-i18n="question1">
                 How can I buy HashPanda tokens?
               </span>
               <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </button>
-            <p x-cloak x-show="active" class="mb-4 font-normal">Download TrustWallet or MetaMask, register on Binance and purchase BNB. Click the buy button on this page and you will be redirected to PancakeSwapV2. Click "I understand" and purchase the desired amount.</p>
+            <p x-cloak x-show="active" class="mb-4 font-normal" data-i18n="answer1">Download TrustWallet or MetaMask, register on Binance and purchase BNB. Click the buy button on this page and you will be redirected to PancakeSwapV2. Click "I understand" and purchase the desired amount.</p>
           </li>
           <li x-data="{'active': false}">
             <button @click="active = !active" class="py-3 lg:py-4 font-bold focus:outline-none hover:text-indigo-700 w-full flex items-center justify-between">
-              <span class="flex-1 text-left pr-6">
+              <span class="flex-1 text-left pr-6" data-i18n="question2">
                 What is your roadmap?
               </span>
               <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </button>
-            <p x-cloak x-show="active" class="mb-4 font-normal">HashPanda’s first mission is to become the most decentralized meme-token. We want to surpass Dogecoin in the number of active token holders. Our second mission is to make cryptocurrencies mainstream by providing simple-to-use dApps for “normies”. Currently, we are developing a meme-sharing content platform with creator tipping features. This will give PANDA tokens utility and will ensure the continuous growth of this project, once the first mission has been realized.</p>
+            <p x-cloak x-show="active" class="mb-4 font-normal" data-i18n="answer2">HashPanda’s first mission is to become the most decentralized meme-token. We want to surpass Dogecoin in the number of active token holders. Our second mission is to make cryptocurrencies mainstream by providing simple-to-use dApps for “normies”. Currently, we are developing a meme-sharing content platform with creator tipping features. This will give PANDA tokens utility and will ensure the continuous growth of this project, once the first mission has been realized.</p>
           </li>
           <li x-data="{'active': false}">
             <button @click="active = !active" class="py-3 lg:py-4 font-bold focus:outline-none hover:text-indigo-700 w-full flex items-center justify-between">
-              <span class="flex-1 text-left pr-6">
+              <span class="flex-1 text-left pr-6" data-i18n="question3">
                 What is the marketing for HashPanda?
               </span>
               <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </button>
-            <p x-cloak x-show="active" class="mb-4 font-normal">HashPanda currently has six volunteers working on marketing activities. Specifically, we are working on guerilla marketing campaigns to reach a wide mainstream audience of users.</p>
+            <p x-cloak x-show="active" class="mb-4 font-normal" data-i18n="answer3">HashPanda currently has six volunteers working on marketing activities. Specifically, we are working on guerilla marketing campaigns to reach a wide mainstream audience of users.</p>
           </li>
           <li x-data="{'active': false}">
             <button @click="active = !active" class="py-3 lg:py-4 font-bold focus:outline-none hover:text-indigo-700 w-full flex items-center justify-between">
-              <span class="flex-1 text-left pr-6">
+              <span class="flex-1 text-left pr-6" data-i18n="question4">
                 What are the tokenomics of HashPanda?
               </span>
               <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </button>
-            <p x-cloak x-show="active" class="mb-4 font-normal">The total supply is 1,000,000,000,000,000 of which 50% is burned, 40% distributed via airdrops/community rewards, 5% allocated for growth/development and 5% provided as public liquidity. Of the transaction value, 5% is locked for liquidity and 3% is distributed to token holders.</p>
+            <p x-cloak x-show="active" class="mb-4 font-normal" data-i18n="answer4">The total supply is 1,000,000,000,000,000 of which 50% is burned, 40% distributed via airdrops/community rewards, 5% allocated for growth/development and 5% provided as public liquidity. Of the transaction value, 5% is locked for liquidity and 3% is distributed to token holders.</p>
           </li>
           <li x-data="{'active': false}">
             <button @click="active = !active" class="py-3 lg:py-4 font-bold focus:outline-none hover:text-indigo-700 w-full flex items-center justify-between">
-              <span class="flex-1 text-left pr-6">
+              <span class="flex-1 text-left pr-6" data-i18n="question5">
                 Why did I receive PANDA tokens?
               </span>
               <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </button>
-            <p x-cloak x-show="active" class="mb-4 font-normal">Please refer to the "Decentralized Distribution" section of this page. You've either signed up for an airdrop, added value to the project, transacted on BSC, transacted with PANDA or used one of our dApps.</p>
+            <p x-cloak x-show="active" class="mb-4 font-normal" data-i18n="answer5">Please refer to the "Decentralized Distribution" section of this page. You've either signed up for an airdrop, added value to the project, transacted on BSC, transacted with PANDA or used one of our dApps.</p>
           </li>
           <li x-data="{'active': false}">
             <button @click="active = !active" class="py-3 lg:py-4 font-bold focus:outline-none hover:text-indigo-700 w-full flex items-center justify-between">
-              <span class="flex-1 text-left pr-6">
+              <span class="flex-1 text-left pr-6" data-i18n="question6">
                 What is the HashPanda token contract address?
               </span>
               <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </button>
-            <p x-cloak x-show="active" class="mb-4 font-normal">The official BEP-20 (BSC) address is 0x8578Eb576e126f67913a8bC0622e0A22EBa0989A</p>
+            <p x-cloak x-show="active" class="mb-4 font-normal" data-i18n="answer6">The official BEP-20 (BSC) address is 0x8578Eb576e126f67913a8bC0622e0A22EBa0989A</p>
           </li>
           <li x-data="{'active': false}">
             <button @click="active = !active" class="py-3 lg:py-4 font-bold focus:outline-none hover:text-indigo-700 w-full flex items-center justify-between">
-              <span class="flex-1 text-left pr-6">
+              <span class="flex-1 text-left pr-6" data-i18n="question7">
                 What is the token ticker for HashPanda?
               </span>
               <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </button>
-            <p x-cloak x-show="active" class="mb-4 font-normal">The ticker is PANDA</p>
+            <p x-cloak x-show="active" class="mb-4 font-normal" data-i18n="answer7">The ticker is PANDA</p>
           </li>
         </ul>
       </div>
@@ -424,10 +425,10 @@
 
   <div class="bg-gray-900" id="join">
     <div class="max-w-screen-xl mx-auto px-6 lg:px-8 xl:px-4 relative z-20">
-        <h3 class="text-center text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Join the #PandaGang</h3>
+        <h3 class="text-center text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-6" data-i18n="join-pandagang">Join the #PandaGang</h3>
         <div class="flex space-x-4 justify-center">
-            <a href="https://t.me/HashPanda" class="focus:outline-none inline-block bg-transparent border-2 border-white hover:bg-gray-700 font-semibold rounded-lg py-4 px-6 text-white">Join Telegram</a>
-            <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x8578Eb576e126f67913a8bC0622e0A22EBa0989A" class="focus:outline-none inline-block bg-gradient-to-br from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-700 font-semibold rounded-lg py-4 px-6 text-white"><img class="w-4 h-4 inline mr-2 -mt-1" src="images/cake.svg" />Buy on PancakeSwapV2</a>
+            <a href="https://t.me/HashPanda" class="focus:outline-none inline-block bg-transparent border-2 border-white hover:bg-gray-700 font-semibold rounded-lg py-4 px-6 text-white" data-i18n="join-telegram">Join Telegram</a>
+            <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x8578Eb576e126f67913a8bC0622e0A22EBa0989A" class="focus:outline-none inline-block bg-gradient-to-br from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-700 font-semibold rounded-lg py-4 px-6 text-white"><img class="w-4 h-4 inline mr-2 -mt-1" src="images/cake.svg" /><span data-i18n="buy-pancakeswap">Buy on PancakeSwapV2</span></a>
         </div>
     </div>
   </div>
@@ -503,7 +504,7 @@
     <div class="max-w-screen-xl mx-auto px-6 lg:px-8 xl:px-4 flex flex-col md:flex-row justify-between items-center space-y-4 mt-16 lg:mt-20">
       <div class="text-sm space-y-4 md:space-y-1 text-center md:text-left">
         <p>2021 - The HashPanda project (#PANDA).</p>
-        <p>Making cryptocurrencies mainstream.</p>
+        <p>The Most Decentralized Meme-Token.</p>
       </div>
       <div class="max-w-screen-xl justify-end px-6 lg:px-8 xl:px-4 mb-12 lg:mb-16">
         <a href="#" class="w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0">
